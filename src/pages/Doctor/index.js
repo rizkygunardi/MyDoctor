@@ -60,7 +60,7 @@ const Doctor = ({navigation}) => {
       .ref('category_doctor/')
       .once('value')
       .then((res) => {
-        console.log('category doctor: ', res.val());
+        //console.log('category doctor: ', res.val());
         //coba looping, jika ada perubahan pada news
         if (res.val()) {
           //mengecek data kosong kalo ada maka akan difilter

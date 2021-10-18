@@ -6,7 +6,7 @@ import {Loading} from './components';
 //setup yang dibutuhkan oleh redux adalah provider
 import {Provider, useSelector} from 'react-redux';
 import store from './redux/store';
-import {YellowBox} from 'react-native';
+import {LogBox} from 'react-native';
 //fungsi provider yaitu untuk mengumpulkan semua store yang telah dibuat
 
 const MainApp = () => {
@@ -18,7 +18,7 @@ const MainApp = () => {
 
   //ini pemanggilan atau implementasi state pada store
   const stateGlobal = useSelector((state) => state);
-  YellowBox.ignoreWarnings(['Setting a timer']);
+  LogBox.ignoreLogs(['Setting a timer']);
 
   return (
     <>

@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {ILLogo} from '../../assets/illustration';
+import {ILLogo} from '../../assets';
 import {fonts} from '../../utils';
 import {colors} from '../../utils/colors';
 import {Firebase} from '../../config';
